@@ -29,20 +29,27 @@
                    Grid.Column="2"
                    Grid.Row="1"
                    />
-        <TextBlock Text="**Add to Order**"
-                   Grid.Column="0"
-                   Grid.Row="4"
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Center"
-                   />
-        <TextBlock Text="**Submit Order**"
-                   Grid.Column="1"
-                   Grid.Row="4"
-                   Grid.ColumnSpan="2"
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Center"
-                   />
-
-
+        <Button Content="Add to Order"
+                Grid.Column="0"
+                Grid.Row="4"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                />
+        <Button Content="Submit Order"
+                Grid.Column="1"
+                Grid.Row="4"
+                Grid.ColumnSpan="2"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                />
+        <ListView Grid.Row="2"
+                  Grid.Column="0"
+                  />
+        <ListView Grid.Row="2"
+                  Grid.Column="2"
+                  />
+        <AppBar Grid.ColumnSpan="3" ClosedDisplayMode="Compact">
+            <AppBarButton Icon="Home" Label="Home" Click="AppBarButton_Click"/>
+        </AppBar>
     </Grid>
 </Page>
