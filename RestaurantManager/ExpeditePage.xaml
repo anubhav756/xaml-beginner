@@ -7,16 +7,17 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <Page.TopAppBar>
+        <AppBar ClosedDisplayMode="Compact">
+            <AppBarButton Icon="Home" Label="Home" Click="AppBarButton_Click"/>
+        </AppBar>
+    </Page.TopAppBar>
+    
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="9*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
-        <AppBar ClosedDisplayMode="Compact" Grid.Row="0">
-            <AppBarButton Icon="Home" Label="Home" Click="AppBarButton_Click"/>
-        </AppBar>
 
         <GridView Grid.Row="1"/>
         

@@ -7,6 +7,12 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <Page.TopAppBar>
+        <AppBar ClosedDisplayMode="Compact">
+            <AppBarButton Icon="Home" Label="Home" Click="AppBarButton_Click"/>
+        </AppBar>        
+    </Page.TopAppBar>
+    
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
@@ -48,8 +54,5 @@
         <ListView Grid.Row="2"
                   Grid.Column="2"
                   />
-        <AppBar Grid.ColumnSpan="3" ClosedDisplayMode="Compact">
-            <AppBarButton Icon="Home" Label="Home" Click="AppBarButton_Click"/>
-        </AppBar>
     </Grid>
 </Page>
