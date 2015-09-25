@@ -14,6 +14,7 @@
         <Style TargetType="TextBlock">
             <Setter Property="FontSize" Value="32" />
         </Style>
+
         <model:DataManager x:Key="DataManager" />
     </Application.Resources>
 
